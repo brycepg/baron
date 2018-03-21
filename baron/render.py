@@ -176,6 +176,11 @@ nodes_rendering_order = {
             ("string",     "value",             True),
             ("formatting", "second_formatting", True),
         ],
+        "interpolated_string": [
+            ("formatting", "first_formatting", True),
+            ("string",     "value",            True),
+            ("formatting","second_formatting", True),
+        ],
 
         # FIXME ugly, comment can end up in formatting of another
         # node or being standalone, this is bad
