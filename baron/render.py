@@ -318,6 +318,12 @@ nodes_rendering_order = {
             ("formatting", "second_formatting", "target"),
             ("key",        "value",             True),
         ],
+        "typehint": [
+            ("formatting", "first_formatting",  True),
+            ("constant",   ":",                 True),
+            ("formatting", "second_formatting", True),
+            ("key",        "value",             True),
+         ],
         "def_argument": [
             ("key",        "target",            True),
             ("formatting", "first_formatting",  "value"),
@@ -450,7 +456,14 @@ nodes_rendering_order = {
             ("key",        "step",              ["has_two_colons", "step"]),
             ("bool",       "has_two_colons",    False),
         ],
-
+        "vardef": [
+            ("key",        "target",            True),
+            ("formatting", "first_formatting",  True),
+            ("key",        "typehint",          "typehint"),
+            ("constant",   "=",                 "value"),
+            ("formatting", "second_formatting", "value"),
+            ("key",        "value",             "value"),
+        ],
         "assignment": [
             ("key",        "target",            True),
             ("formatting", "first_formatting",  True),
